@@ -1,0 +1,16 @@
+SÉRIE D.I. INVESTIGAÇÕES — ARQUIVOS DO HORIZONTE
+
+COMO ABRIR:
+1. Extraia todos os arquivos do ZIP para a mesma pasta.
+2. Abra index.html no navegador.
+3. Comece pelo Caso 047.
+4. Resolva cada caso e revele o relatório final para liberar o próximo.
+
+ARQUIVOS:
+- index.html: painel central
+- caso-047.html até caso-050.html: quatro investigações conectadas
+- style.css: visual compartilhado baseado no modelo enviado
+- app.js: conteúdo, navegação e progresso
+
+O progresso fica salvo no armazenamento local do navegador.
+Todos os personagens e acontecimentos são fictícios.

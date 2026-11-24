@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Roboto+Mono:wght@400;500;700&display=swap');
+:root{--bg:#090b0e;--panel:#11161c;--panel2:#171e26;--red:#b83232;--gold:#c4a36a;--text:#e5e2da;--muted:#89919a;--line:#303943;--green:#78b58a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Roboto Mono',monospace;min-height:100vh}
+button,a{font-family:inherit;cursor:pointer}
+header{height:65px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;border-bottom:1px solid var(--line);background:#0d1116;position:sticky;top:0;z-index:10}
+.logo{font-family:'Special Elite',cursive;letter-spacing:2px;font-size:17px;color:var(--text);text-decoration:none}
+.logo span{color:var(--red)}
+.status{color:#df6666;font-size:10px;letter-spacing:1px}
+.layout{display:grid;grid-template-columns:230px 1fr;min-height:calc(100vh - 65px)}
+aside{background:#0d1116;border-right:1px solid var(--line);padding:28px 15px}
+.side-title{color:var(--muted);font-size:10px;margin:0 10px 18px;letter-spacing:2px}
+nav a{display:block;width:100%;padding:13px 12px;background:transparent;border:0;border-left:3px solid transparent;color:#9ba3ac;text-align:left;text-decoration:none;font-size:10px;margin-bottom:5px;transition:.2s}
+nav a:hover,nav a.active{background:#1a2028;color:white;border-left-color:var(--red)}
+nav a.locked{opacity:.38;cursor:not-allowed}
+main{padding:35px 5%;min-width:0;max-width:1500px;width:100%}
+.eyebrow{color:var(--red);font-size:10px;letter-spacing:3px;margin-bottom:14px}
+h1,h2,h3{font-weight:500}
+h1{font-family:'Special Elite',cursive;font-size:clamp(34px,6vw,60px);margin-bottom:12px}
+h2{font-size:21px;margin-bottom:15px}
+h3{font-size:14px;margin-bottom:10px}
+p{color:#aab0b6;font-size:12px;line-height:1.9}
+.hero{min-height:330px;padding:42px;background:linear-gradient(90deg,rgba(5,8,12,.97),rgba(5,8,12,.68)),linear-gradient(0deg,#10151c,#27313a);border:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.hero:after{content:attr(data-number);position:absolute;right:4%;top:10%;font-size:clamp(100px,20vw,220px);color:rgba(255,255,255,.035);font-weight:bold;pointer-events:none}
+.hero p{max-width:650px;margin:12px 0 22px}
+.btn{display:inline-block;background:var(--red);color:white;border:1px solid var(--red);padding:13px 18px;font-size:10px;letter-spacing:1px;transition:.2s;text-decoration:none}
+.btn:hover{background:#8d2525}
+.btn.secondary{background:transparent;border-color:var(--line);color:#ddd}
+.btn.secondary:hover{border-color:var(--red)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}
+.stat{background:var(--panel);border:1px solid var(--line);padding:17px}
+.stat strong{display:block;color:var(--gold);font-size:22px;margin-bottom:7px}
+.stat small{color:var(--muted);font-size:9px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:20px}
+.card,.profile{background:var(--panel);border:1px solid var(--line);padding:20px;transition:.2s}
+.card:hover,.profile:hover{border-color:#8b4545;transform:translateY(-2px)}
+.number{color:var(--red);font-size:11px;margin-bottom:15px}
+.card p{font-size:11px}
+.tag{display:inline-block;padding:5px 8px;font-size:9px;border:1px solid #684040;color:#df8585;margin-top:12px}
+.tag.gold{border-color:#685b43;color:var(--gold)}
+.section-heading{margin:35px 0 10px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.file{background:#d9d2bd;color:#25231e;padding:28px;margin:15px 0;box-shadow:0 8px 25px #0008;font-family:'Special Elite',cursive;transform:rotate(-.2deg)}
+.file h3{font-size:20px;border-bottom:1px solid #777;padding-bottom:12px;color:#25231e}
+.file p{color:#37352e;font-family:Arial,sans-serif;font-size:13px;margin-top:13px}
+.stamp{color:#a52d2d;border:2px solid #a52d2d;display:inline-block;padding:5px 10px;transform:rotate(-5deg);margin-top:20px;font-weight:bold}
+.profile .avatar{height:58px;width:58px;border:1px solid var(--gold);display:grid;place-items:center;font-size:20px;color:var(--gold);margin-bottom:15px}
+.role{color:var(--gold);font-size:10px;margin-bottom:12px}
+.quote{border-left:3px solid var(--red);padding:15px;background:#171d24;margin:12px 0;font-size:11px;line-height:1.8;color:#d0d0cc}
+.timeline{border-left:2px solid #5c3838;margin:25px 0 25px 12px;padding-left:25px}
+.event{position:relative;padding-bottom:25px}
+.event:before{content:"";position:absolute;left:-32px;top:4px;width:11px;height:11px;background:var(--red);border-radius:50%}
+.event time{color:var(--gold);font-size:12px;display:block;margin-bottom:6px}
+.evidence{background:var(--panel);border:1px solid var(--line);padding:17px;margin-bottom:10px}
+.evidence summary{cursor:pointer;color:var(--gold);font-size:12px}
+.evidence p{margin-top:12px}
+.answer{display:block;width:100%;text-align:left;background:#171e26;border:1px solid var(--line);color:#ddd;padding:16px;margin:9px 0;font-size:11px}
+.answer:hover{border-color:var(--gold)}
+.result{padding:20px;margin-top:20px;background:#151b22;border:1px solid var(--line);line-height:1.8;font-size:12px}
+.progress{height:5px;background:#252c34;margin-top:15px}.progress div{height:100%;background:var(--red);width:0%;transition:.4s}
+.notice{padding:15px;border:1px solid #684040;background:#21171a;margin:18px 0;color:#d5b5b5;font-size:11px;line-height:1.8}
+.case-link{display:flex;justify-content:space-between;gap:15px;align-items:center;background:var(--panel);border:1px solid var(--line);padding:17px;margin:10px 0;text-decoration:none;color:var(--text)}
+.case-link:hover{border-color:var(--gold)}
+.case-link small{display:block;color:var(--muted);font-size:10px;margin-top:5px}
+.case-link.locked{opacity:.4;pointer-events:none}
+footer{text-align:center;border-top:1px solid var(--line);padding:20px;color:#59616a;font-size:9px;letter-spacing:2px}
+input,textarea{width:100%;background:#0d1116;border:1px solid var(--line);color:var(--text);padding:12px;font:11px 'Roboto Mono',monospace;margin:8px 0}
+@media(max-width:700px){.layout{grid-template-columns:1fr}aside{padding:10px;border-right:0}nav{display:grid;grid-template-columns:repeat(2,1fr)}nav a{font-size:9px;padding:11px 7px}.side-title{display:none}main{padding:25px 15px}.stats{grid-template-columns:repeat(2,1fr)}.hero{padding:25px}header{padding:0 15px}.status{font-size:8px}}
+
+
+button:disabled { opacity: .45; cursor: not-allowed; }
